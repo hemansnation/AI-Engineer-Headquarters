@@ -43,19 +43,12 @@ You can customize the learning sessions according to your time availability.
 
 ## the path
 
-1. [Python]()
-2. [Data Structures & Algorithms]()
-3. [Git and GitHub]()
-4. [NumPy]()
-5. [Pandas]()
-6. [Math]()
-7. [Machine Learning]()
-8. [Machine‌ ‌Learning‌ Operations]()
-9. [Natural Language Processing X Deep Learning]()
-10. [Computer Vision X Deep Learning]()
-11. [AI/ML System Design]()
-12. [Major Capstone Projects]()
-13. [AI Interview]()
-14. [Projects](/projects/)
-15. [Personal Branding & Portfolio]()
-
+0. Prep
+1. Foundations of AI Engineering
+2. Mastering Large Language Models (LLMs)
+3. Retrieval-Augmented Generation (RAG)
+4. Fine-Tuning LLMs
+5. Reinforcement Learning and Ethical AI
+6. Agentic Workflows
+7. Career Acceleration
+8. Bonus
