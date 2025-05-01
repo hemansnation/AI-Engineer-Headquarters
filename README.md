@@ -1,6 +1,6 @@
-[![Open Source Love](https://firstcontributions.github.io/open-source-badges/badges/open-source-v1/open-source.svg)](https://github.com/hemansnation/God-Level-AI)
+[![Open Source Love](https://firstcontributions.github.io/open-source-badges/badges/open-source-v1/open-source.svg)](https://github.com/hemansnation/AI-Engineer-Headquarters)
 
-<h1 align= "center" > God Level AI</h1>
+<h1 align= "center" >AI Engineer Headquarters</h1>
 <p>
 A drill of scientific methods, processes, algorithms, and systems to build stories & models. An in-depth learning resource for humans.
 
