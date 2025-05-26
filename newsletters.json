@@ -1,0 +1,40 @@
+{
+    "Python": [
+        {
+            "title": "Python",
+            "link": "https://newsletter.himanshuramchandani.co/some-title"
+        },
+        {
+            "title": "title 2",
+            "link": "https://newsletter.himanshuramchandani.co/title-2"
+        }
+    ],
+    "ML": [
+        {
+            "title": "some title",
+            "link": "https://newsletter.himanshuramchandani.co"
+        },
+        {
+            "title": "title 2",
+            "link": "https://newsletter.himanshuramchandani.co"
+        }
+    ],
+    "ML2": [
+        {
+            "title": "some title",
+            "link": "https://newsletter.himanshuramchandani.co"
+        },
+        {
+            "title": "title 2",
+            "link": "https://newsletter.himanshuramchandani.co"
+        },
+        {
+            "title": "some title",
+            "link": "https://newsletter.himanshuramchandani.co"
+        },
+        {
+            "title": "some title",
+            "link": "https://newsletter.himanshuramchandani.co"
+        }
+    ]
+}
