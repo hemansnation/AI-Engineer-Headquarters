@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/3a5faa601f084ed98c92b80f2cf2c8f2/artifacts
+end_time: 1748154521465
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3a5faa601f084ed98c92b80f2cf2c8f2
+run_name: treasured-crab-225
+run_uuid: 3a5faa601f084ed98c92b80f2cf2c8f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748154517246
+status: 3
+tags: []
+user_id: Tanmay Chakraborty

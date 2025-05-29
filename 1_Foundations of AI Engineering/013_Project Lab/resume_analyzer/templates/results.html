@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Resume Analysis Results</h1>
+    <h2>Extracted Information</h2>
+    <p>Name: {{ entities.name or 'Not found' }}</p>
+    <p>Email: {{ entities.email or 'Not found' }}</p>
+    <p>Phone: {{ entities.phone or 'Not found' }}</p>
+    <p>Skills: {{ entities.skills | join(', ') or 'None' }}</p>
+    <p>Education: {{ entities.education | join(', ') or 'None' }}</p>
+
+    <br>
+    <h2>Resume Score</h2>
+    <p>Score: {{ score_data.score }}%</p>
+    <p>Feedback: {{ score_data.feedback }}</p>
+    <a href="/">Analyze another resume</a>
+</body>
+</html>

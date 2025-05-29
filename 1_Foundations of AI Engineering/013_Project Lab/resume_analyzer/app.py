@@ -35,12 +35,12 @@ def upload_resume():
         if text.startswith("Error:"):
             return render_template("error.html", message=text)
 
-        entities = extract_text_from_pdf(file_path)
+        entities = parser.extract_entities(text)
         score_data = parser.score_resume(entities)
 
         os.remove(file_path)
 
-        return render_template('result.html', entities=entities, score_data=score_data)
+        return render_template('results.html', entities=entities, score_data=score_data)
     
     return render_template("error.html", message="Invalid file format. Please upload a PDF file.")
 

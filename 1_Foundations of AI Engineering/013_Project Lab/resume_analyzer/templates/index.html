@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>AI Powered Resume Analyzer</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="resume">Upload your resume (PDF):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf" required>
+        <button type="submit">Analyze</button>
+    </form>
+    <script src="{{ url_for('static', filename='js/scipts.js') }}"></script>
+</body>
+</html>
