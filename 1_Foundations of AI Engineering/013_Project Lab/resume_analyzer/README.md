@@ -51,4 +51,18 @@ stop words -> and, the, a, an
 5. nlp logic - resume parser
 6. flask app
 7. templates html and static css
-8. 
+8. run the project
+
+
+
+ https://github.com/hemansnation
+scheme
+- ftp
+- http
+- https (secure - SSL)
+
+dns
+representation of IP address
+
+route
+/hemansnation
