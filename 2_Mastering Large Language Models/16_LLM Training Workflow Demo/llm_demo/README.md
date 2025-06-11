@@ -27,4 +27,16 @@ objective
 4. data preprocessing
 5. fine-tune distilBERT using LoRA (Low Rank Adaptation)
     - deepseek used LoRA: reduce compute cost
-6. 
+6. inference
+7. flask app 
+
+app.py - flask app which will give us an endpoint to user to interact with the project
+preprocess.py - which will pull the raw data(json), apply filters, and create cleaned data for us
+train.py - which will use the cleaned data and fine tune the distilBERT on that cleaned data
+inference.py - to check what the output the model is generating - valid or not valid
+
+
+
+error resolution here:
+- train.py
+

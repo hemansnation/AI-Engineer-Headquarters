@@ -21,7 +21,7 @@ def fine_tune_model():
     lora_config = LoraConfig(
         r=8,
         lora_alpha=16,
-        target_modules=['q_lin', 'v_lin'],
+        target_modules=["q_lin", "v_lin"],
         lora_dropout=0.1,
         bias="none",
         task_type="SEQ_CLS"
@@ -30,12 +30,12 @@ def fine_tune_model():
 
     training_args = TrainingArguments(
         output_dir="models/distilbert",
-        evaluation_strategy="no",
         per_device_train_batch_size=1,
         num_train_epochs=1,
         logging_steps=10,
         save_steps=100,
-        remove_unused_columns=True,
+        evaluation_strategy="no",
+        remove_unused_columns=True
     )
 
     trainer = Trainer(
