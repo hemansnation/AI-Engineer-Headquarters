@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "code": "def add(a,b):\n    return a + b\n",
+    "label": 1
+  },
+  {
+    "id": 2,
+    "code": "def factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)\n",
+    "label": 1
+  },
+  {
+    "id": 3,
+    "code": "def invalid_code\n    print('missing colon')\n",
+    "label": 0
+  }
+]
