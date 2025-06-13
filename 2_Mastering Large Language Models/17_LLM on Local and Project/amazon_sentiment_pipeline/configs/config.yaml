@@ -1,0 +1,19 @@
+data:
+  raw_path: data/raw/amazon_reviews_us_Electronics_v1_00.tsv
+  processed_path: data/processed/preprocessed_reviews.csv
+  columns:
+    review_text: review_body
+    rating: star_rating
+model:
+  ollama_model: llama3.2:1b
+  max_tokens: 512
+
+output:
+  results_path: outputs/results/sentiment_predictions.csv
+  figures_path: outputs/figures/
+  logs_path: outputs/logs/pipeline.log
+
+preprocessing:
+  max_length: 200
+  sample_size: 100
+
