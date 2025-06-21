@@ -1,0 +1,14 @@
+.App{
+  text-align: center;
+  padding: 20px;
+}
+
+textarea{
+  width: 80%;
+  height: 100px;
+  margin: 10px;
+}
+button{
+  padding: 10px 20px;
+  margin: 10px;
+}
