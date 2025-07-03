@@ -1,0 +1,9 @@
+model_type: LinearRegression
+
+model_parameters:
+  fit_intercept: true
+  normalize: false
+
+train_test_split:
+  test_size: 0.2
+  random_state: 42
