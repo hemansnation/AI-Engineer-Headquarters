@@ -1,0 +1,122 @@
+[
+    {
+        "instruction": "What is the capital of France?",
+        "response": "The capital of France is Paris."
+    },
+    {
+        "instruction": "Who wrote 'Pride and Prejudice'?",
+        "response": "Jane Austen wrote 'Pride and Prejudice'."
+    },
+    {
+        "instruction": "What is 2 + 2?",
+        "response": "2 + 2 equals 4."
+    },
+    {
+        "instruction": "What is the largest planet in our solar system?",
+        "response": "The largest planet in our solar system is Jupiter."
+    },
+    {
+        "instruction": "What is the boiling point of water?",
+        "response": "The boiling point of water is 100 degrees Celsius at sea level."
+    },
+    {
+        "instruction": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "instruction": "What is the chemical symbol for gold?",
+        "response": "The chemical symbol for gold is Au."
+    },
+    {
+        "instruction": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "instruction": "Who discovered penicillin?",
+        "response": "Penicillin was discovered by Alexander Fleming."
+    },
+    {
+        "instruction": "What is the speed of light?",
+        "response": "The speed of light in a vacuum is approximately 299,792 kilometers per second."
+    },
+    {
+        "instruction": "What is the main ingredient in guacamole?",
+        "response": "The main ingredient in guacamole is avocado."
+    },
+    {
+        "instruction": "What is the largest mammal?",
+        "response": "The largest mammal is the blue whale."
+    },
+    {
+        "instruction": "What is the currency of Germany?",
+        "response": "The currency of Germany is the Euro."
+    },
+    {
+        "instruction": "Who wrote '1984'?",
+        "response": "George Orwell wrote '1984'."
+    },
+    {
+        "instruction": "What is the capital of Italy?",
+        "response": "The capital of Italy is Rome."
+    },
+    {
+        "instruction": "What is the primary language spoken in Brazil?",
+        "response": "The primary language spoken in Brazil is Portuguese."
+    },
+    {
+        "instruction": "What is the formula for water?",
+        "response": "The formula for water is H2O."
+    },
+    {
+        "instruction": "Who was the first person to walk on the moon?",
+        "response": "Neil Armstrong was the first person to walk on the moon."
+    },
+    {
+        "instruction": "What is the largest continent?",
+        "response": "The largest continent is Asia."
+    },
+    {
+        "instruction": "What is the main ingredient in sushi?",
+        "response": "The main ingredient in sushi is rice, often accompanied by fish or vegetables."
+    },
+    {
+        "instruction": "What is the capital of Canada?",
+        "response": "The capital of Canada is Ottawa."
+    },
+    {
+        "instruction": "Who wrote 'To Kill a Mockingbird'?",
+        "response": "Harper Lee wrote 'To Kill a Mockingbird'."
+    },
+    {
+        "instruction": "What is the chemical symbol for water?",
+        "response": "The chemical symbol for water is H2O."
+    },
+    {
+        "instruction": "What is the largest ocean on Earth?",
+        "response": "The largest ocean on Earth is the Pacific Ocean."
+    },
+    {
+        "instruction": "What is the capital of Australia?",
+        "response": "The capital of Australia is Canberra."
+    },
+    {
+        "instruction": "Who painted the Sistine Chapel ceiling?",
+        "response": "The Sistine Chapel ceiling was painted by Michelangelo."
+    },
+    {
+        "instruction": "What is the main ingredient in hummus?",
+        "response": "The main ingredient in hummus is chickpeas."
+    },
+    {
+        "instruction": "What is the capital of Spain?",
+        "response": "The capital of Spain is Madrid."
+    },
+    {
+        "instruction": "Who wrote 'The Great Gatsby'?",
+        "response": "F. Scott Fitzgerald wrote 'The Great Gatsby'."
+    },
+    {
+        "instruction": "What is the chemical symbol for carbon dioxide?",
+        "response": "The chemical symbol for carbon dioxide is CO2."
+    }
+]
