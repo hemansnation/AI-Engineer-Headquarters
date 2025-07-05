@@ -1,0 +1,4 @@
+2025-07-02 21:20:48 - \U0001f680 Starting Full ML Pipeline... - [Line: 11] - root - INFO
+2025-07-02 21:20:48 - \U0001f4e5 Running Data Ingestion... - [Line: 17] - root - INFO
+2025-07-02 21:20:48 - \U0001f50d Reading raw dataset from source... - [Line: 19] - root - INFO
+2025-07-02 21:20:48 - \u274c Pipeline Failed: Error occurred in script: [data_ingestion.py] at line number: [50] error message: [Error occurred in script: [data_ingestion.py] at line number: [20] error message: ['DataIngestionConfig' object has no attribute 'source_data_file']] - [Line: 40] - root - ERROR

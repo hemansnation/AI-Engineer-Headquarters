@@ -1,0 +1,11 @@
+pandas
+numpy
+ipykernel
+mysql-connector-python
+sqlalchemy
+pyyaml
+scikit-learn
+imblearn
+mlflow
+
+-e .

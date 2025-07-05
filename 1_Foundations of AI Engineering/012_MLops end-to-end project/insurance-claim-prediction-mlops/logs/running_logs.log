@@ -1,0 +1,94 @@
+2025-07-02 22:21:49,183 - 🚀 Starting Full ML Pipeline... - [Line: 12] - root - INFO
+2025-07-02 22:21:49,184 - 📥 Running Data Ingestion... - [Line: 15] - root - INFO
+2025-07-02 22:21:49,184 - ❌ Pipeline Failed: Error in get_data_ingestion_config: DataIngestionConfig.__init__() got an unexpected keyword argument 'sqlite_path' - [Line: 46] - root - ERROR
+2025-07-02 22:26:22,280 - 🚀 Starting Full ML Pipeline... - [Line: 12] - root - INFO
+2025-07-02 22:26:22,281 - 📥 Running Data Ingestion... - [Line: 15] - root - INFO
+2025-07-02 22:26:22,281 - 🚀 Starting data ingestion process... - [Line: 75] - root - INFO
+2025-07-02 22:26:22,284 - 🔌 Connecting to SQLite and reading data from table... - [Line: 22] - root - INFO
+2025-07-02 22:26:22,286 - ✅ Data fetched and 'gender' renamed to 'sex' if present. - [Line: 35] - root - INFO
+2025-07-02 22:26:22,286 - ✂️ Splitting data into train and test sets... - [Line: 44] - root - INFO
+2025-07-02 22:26:22,294 - ❌ Pipeline Failed: Error occurred in script: [data_ingestion.py] at line number: [77] error message: [Error occurred in script: [data_ingestion.py] at line number: [52] error message: ['DataIngestionConfig' object has no attribute 'ingested_train_dir']] - [Line: 46] - root - ERROR
+2025-07-02 22:27:40,073 - 🚀 Starting Full ML Pipeline... - [Line: 12] - root - INFO
+2025-07-02 22:27:40,073 - 📥 Running Data Ingestion... - [Line: 15] - root - INFO
+2025-07-02 22:27:40,073 - ❌ Pipeline Failed: Error in get_data_ingestion_config: DataIngestionConfig.__init__() missing 2 required positional arguments: 'ingested_train_dir' and 'ingested_test_dir' - [Line: 46] - root - ERROR
+2025-07-02 22:31:20,196 - 🚀 Starting Full ML Pipeline... - [Line: 12] - root - INFO
+2025-07-02 22:31:20,196 - 📥 Running Data Ingestion... - [Line: 15] - root - INFO
+2025-07-02 22:31:20,197 - 🚀 Starting data ingestion process... - [Line: 75] - root - INFO
+2025-07-02 22:31:20,197 - 🔌 Connecting to SQLite and reading data from table... - [Line: 22] - root - INFO
+2025-07-02 22:31:20,199 - ✅ Data fetched and 'gender' renamed to 'sex' if present. - [Line: 35] - root - INFO
+2025-07-02 22:31:20,199 - ✂️ Splitting data into train and test sets... - [Line: 44] - root - INFO
+2025-07-02 22:31:20,211 - ✅ Train and test files saved. - [Line: 61] - root - INFO
+2025-07-02 22:31:20,211 - 📦 Train file path: Artifacts\2025-07-02-22-31-20\data_ingestion\ingested\train\train.csv, Rows: 8 - [Line: 62] - root - INFO
+2025-07-02 22:31:20,212 - 📦 Test file path: Artifacts\2025-07-02-22-31-20\data_ingestion\ingested\test\test.csv, Rows: 2 - [Line: 63] - root - INFO
+2025-07-02 22:31:20,212 - ✅ Data Ingestion Completed. - [Line: 20] - root - INFO
+2025-07-02 22:31:20,212 - 🏋️‍♀️ Training model... - [Line: 23] - root - INFO
+2025-07-02 22:31:20,215 - ✅ Using train: Artifacts\data_ingestion\ingested\train.csv, test: Artifacts\data_ingestion\ingested\test.csv - [Line: 32] - root - INFO
+2025-07-02 22:31:20,216 - 📁 Train path: Artifacts\data_ingestion\ingested\train.csv, Test path: Artifacts\data_ingestion\ingested\test.csv - [Line: 15] - root - INFO
+2025-07-02 22:31:20,216 - 📥 Loading training and testing datasets... - [Line: 21] - root - INFO
+2025-07-02 22:31:20,228 - 🧠 Training Linear Regression model... - [Line: 38] - root - INFO
+2025-07-02 22:31:20,230 - ❌ Pipeline Failed: Error occurred in script: [model_trainer.py] at line number: [40] error message: [❌ Model training failed: could not convert string to float: 'male'] - [Line: 46] - root - ERROR
+2025-07-02 22:33:33,903 - 🚀 Starting Full ML Pipeline... - [Line: 12] - root - INFO
+2025-07-02 22:33:33,903 - 📥 Running Data Ingestion... - [Line: 15] - root - INFO
+2025-07-02 22:33:33,904 - 🚀 Starting data ingestion process... - [Line: 75] - root - INFO
+2025-07-02 22:33:33,904 - 🔌 Connecting to SQLite and reading data from table... - [Line: 22] - root - INFO
+2025-07-02 22:33:33,906 - ✅ Data fetched and 'gender' renamed to 'sex' if present. - [Line: 35] - root - INFO
+2025-07-02 22:33:33,906 - ✂️ Splitting data into train and test sets... - [Line: 44] - root - INFO
+2025-07-02 22:33:33,914 - ✅ Train and test files saved. - [Line: 61] - root - INFO
+2025-07-02 22:33:33,914 - 📦 Train file path: Artifacts\2025-07-02-22-33-33\data_ingestion\ingested\train\train.csv, Rows: 8 - [Line: 62] - root - INFO
+2025-07-02 22:33:33,915 - 📦 Test file path: Artifacts\2025-07-02-22-33-33\data_ingestion\ingested\test\test.csv, Rows: 2 - [Line: 63] - root - INFO
+2025-07-02 22:33:33,915 - ✅ Data Ingestion Completed. - [Line: 20] - root - INFO
+2025-07-02 22:33:33,916 - 🏋️‍♀️ Training model... - [Line: 23] - root - INFO
+2025-07-02 22:33:33,917 - ✅ Using train: Artifacts\data_ingestion\ingested\train.csv, test: Artifacts\data_ingestion\ingested\test.csv - [Line: 32] - root - INFO
+2025-07-02 22:33:33,918 - 📁 Train path: Artifacts\data_ingestion\ingested\train.csv, Test path: Artifacts\data_ingestion\ingested\test.csv - [Line: 15] - root - INFO
+2025-07-02 22:33:33,918 - 📥 Loading training and testing datasets... - [Line: 21] - root - INFO
+2025-07-02 22:33:33,924 - 🧠 Training Linear Regression model... - [Line: 38] - root - INFO
+2025-07-02 22:33:33,925 - ❌ Pipeline Failed: Error occurred in script: [model_trainer.py] at line number: [40] error message: [❌ Model training failed: could not convert string to float: 'male'] - [Line: 46] - root - ERROR
+2025-07-02 22:46:31,900 - 🚀 Starting Full ML Pipeline... - [Line: 12] - root - INFO
+2025-07-02 22:46:31,901 - 📥 Running Data Ingestion... - [Line: 15] - root - INFO
+2025-07-02 22:46:31,901 - 🚀 Starting data ingestion process... - [Line: 75] - root - INFO
+2025-07-02 22:46:31,901 - 🔌 Connecting to SQLite and reading data from table... - [Line: 22] - root - INFO
+2025-07-02 22:46:31,903 - ✅ Data fetched and 'gender' renamed to 'sex' if present. - [Line: 35] - root - INFO
+2025-07-02 22:46:31,904 - ✂️ Splitting data into train and test sets... - [Line: 44] - root - INFO
+2025-07-02 22:46:31,912 - ✅ Train and test files saved. - [Line: 61] - root - INFO
+2025-07-02 22:46:31,912 - 📦 Train file path: Artifacts\2025-07-02-22-46-31\data_ingestion\ingested\train\train.csv, Rows: 8 - [Line: 62] - root - INFO
+2025-07-02 22:46:31,912 - 📦 Test file path: Artifacts\2025-07-02-22-46-31\data_ingestion\ingested\test\test.csv, Rows: 2 - [Line: 63] - root - INFO
+2025-07-02 22:46:31,912 - ✅ Data Ingestion Completed. - [Line: 20] - root - INFO
+2025-07-02 22:46:31,913 - 🏋️‍♀️ Training model... - [Line: 23] - root - INFO
+2025-07-02 22:46:31,913 - ✅ Using train: Artifacts\data_ingestion\ingested\train.csv, test: Artifacts\data_ingestion\ingested\test.csv - [Line: 32] - root - INFO
+2025-07-02 22:46:31,914 - 📁 Train path: Artifacts\data_ingestion\ingested\train.csv, Test path: Artifacts\data_ingestion\ingested\test.csv - [Line: 15] - root - INFO
+2025-07-02 22:46:31,914 - 📥 Loading training and testing datasets... - [Line: 21] - root - INFO
+2025-07-02 22:46:31,917 - 🧠 Training Linear Regression model... - [Line: 38] - root - INFO
+2025-07-02 22:46:31,919 - ❌ Pipeline Failed: Error occurred in script: [model_trainer.py] at line number: [40] error message: [❌ Model training failed: could not convert string to float: 'male'] - [Line: 46] - root - ERROR
+2025-07-02 23:00:35,719 - 🚀 Starting Full ML Pipeline... - [Line: 10] - root - INFO
+2025-07-02 23:00:35,720 - 📥 Running Data Ingestion... - [Line: 16] - root - INFO
+2025-07-02 23:00:35,721 - 🚀 Starting data ingestion process... - [Line: 75] - root - INFO
+2025-07-02 23:00:35,721 - 🔌 Connecting to SQLite and reading data from table... - [Line: 22] - root - INFO
+2025-07-02 23:00:35,723 - ✅ Data fetched and 'gender' renamed to 'sex' if present. - [Line: 35] - root - INFO
+2025-07-02 23:00:35,724 - ✂️ Splitting data into train and test sets... - [Line: 44] - root - INFO
+2025-07-02 23:00:35,735 - ✅ Train and test files saved. - [Line: 61] - root - INFO
+2025-07-02 23:00:35,736 - 📦 Train file path: Artifacts\2025-07-02-23-00-35\data_ingestion\ingested\train\train.csv, Rows: 8 - [Line: 62] - root - INFO
+2025-07-02 23:00:35,736 - 📦 Test file path: Artifacts\2025-07-02-23-00-35\data_ingestion\ingested\test\test.csv, Rows: 2 - [Line: 63] - root - INFO
+2025-07-02 23:00:35,737 - ✅ ✅ Data Ingestion Completed - [Line: 20] - root - INFO
+2025-07-02 23:00:35,737 - 🏋️‍♀️ Training model... - [Line: 23] - root - INFO
+2025-07-02 23:00:35,737 - ❌ Unexpected Error: 'Configuration' object has no attribute 'get_model_trainer_config' - [Line: 42] - root - ERROR
+2025-07-02 23:24:34,283 - 🚀 Starting Full ML Pipeline... - [Line: 10] - root - INFO
+2025-07-02 23:24:34,287 - 📥 Running Data Ingestion... - [Line: 16] - root - INFO
+2025-07-02 23:24:34,287 - 🚀 Starting data ingestion process... - [Line: 75] - root - INFO
+2025-07-02 23:24:34,287 - 🔌 Connecting to SQLite and reading data from table... - [Line: 22] - root - INFO
+2025-07-02 23:24:34,287 - ❌ Error during SQLite fetch: 'DataIngestionConfig' object has no attribute 'sqlite_path' - [Line: 39] - root - ERROR
+2025-07-02 23:24:34,288 - ❌ Pipeline Failed: Error occurred in script: [data_ingestion.py] at line number: [76] error message: [Error occurred in script: [data_ingestion.py] at line number: [24] error message: ['DataIngestionConfig' object has no attribute 'sqlite_path']] - [Line: 40] - root - ERROR
+2025-07-02 23:30:55,776 - 🚀 Starting Full ML Pipeline... - [Line: 10] - root - INFO
+2025-07-02 23:30:55,781 - 📥 Running Data Ingestion... - [Line: 16] - root - INFO
+2025-07-02 23:30:55,781 - ❌ Unexpected Error: 'sqlite_path' - [Line: 42] - root - ERROR
+2025-07-02 23:41:01,658 - 🚀 Starting Full ML Pipeline... - [Line: 10] - root - INFO
+2025-07-02 23:41:01,661 - 📥 Running Data Ingestion... - [Line: 16] - root - INFO
+2025-07-02 23:41:01,662 - ❌ Unexpected Error: 'sqlite_path' - [Line: 42] - root - ERROR
+2025-07-02 23:48:00,442 - 🚀 Starting Full ML Pipeline... - [Line: 10] - root - INFO
+2025-07-02 23:48:00,445 - 📥 Running Data Ingestion... - [Line: 16] - root - INFO
+2025-07-02 23:48:00,445 - ❌ Unexpected Error: 'sqlite_path' - [Line: 42] - root - ERROR
+2025-07-02 23:51:19,897 - 🚀 Starting Full ML Pipeline... - [Line: 10] - root - INFO
+2025-07-02 23:51:19,903 - 📥 Running Data Ingestion... - [Line: 16] - root - INFO
+2025-07-02 23:51:19,903 - ❌ Unexpected Error: 'sqlite_path' - [Line: 42] - root - ERROR
+2025-07-02 23:51:34,218 - 🚀 Starting Full ML Pipeline... - [Line: 10] - root - INFO
+2025-07-02 23:51:34,221 - 📥 Running Data Ingestion... - [Line: 16] - root - INFO
+2025-07-02 23:51:34,222 - ❌ Unexpected Error: 'sqlite_path' - [Line: 42] - root - ERROR

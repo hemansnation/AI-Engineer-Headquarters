@@ -1,0 +1,10 @@
+columns:
+  age: int
+  sex: object
+  bmi: float
+  children: int
+  smoker: object
+  region: object
+  charges: float
+
+target_column: charges

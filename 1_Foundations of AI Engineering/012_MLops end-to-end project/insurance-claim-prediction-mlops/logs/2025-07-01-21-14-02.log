@@ -1,0 +1,8 @@
+2025-07-01 21:14:04 - Entered the read_yaml_file method of MainUtils class - [Line: 24] - root - INFO
+2025-07-01 21:14:04 - Reading YAML file from claim/params/params.yaml - [Line: 27] - root - INFO
+2025-07-01 21:14:04 - Starting data ingestion process - [Line: 78] - root - INFO
+2025-07-01 21:14:04 - Connecting to MySQL database and fetching data into DataFrame - [Line: 34] - root - INFO
+2025-07-01 21:14:08 - An error occurred while fetching data: (mysql.connector.errors.DatabaseError) 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+(Background on this error at: https://sqlalche.me/e/20/4xp6) - [Line: 56] - root - ERROR
+2025-07-01 21:14:08 - An error occurred during data ingestion: Error: (mysql.connector.errors.DatabaseError) 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+(Background on this error at: https://sqlalche.me/e/20/4xp6) | File: C:\Users\ritup\Documents\DataScience\AI-Engineer-Headquarters\1_Foundations of AI Engineering\012_MLops end-to-end project\insurance -claim-prediction-mlops\venv\Lib\site-packages\mysql\connector\connection_cext.py | Line: 360 - [Line: 89] - root - ERROR

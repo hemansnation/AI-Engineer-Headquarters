@@ -1,0 +1,8 @@
+2025-07-02 00:31:16 - Entered the read_yaml_file method of MainUtils class - [Line: 24] - root - INFO
+2025-07-02 00:31:16 - Reading YAML file from claim/params/params.yaml - [Line: 27] - root - INFO
+2025-07-02 00:31:16 - \U0001f680 Starting data ingestion process... - [Line: 69] - root - INFO
+2025-07-02 00:31:16 - \U0001f50c Connecting to SQLite and reading data from table... - [Line: 25] - root - INFO
+2025-07-02 00:31:16 - \u2705 Data fetched successfully from SQLite. - [Line: 35] - root - INFO
+2025-07-02 00:31:16 - \u2702\ufe0f Splitting data into train and test sets... - [Line: 47] - root - INFO
+2025-07-02 00:31:16 - \U0001f4c1 Train and test files saved. - [Line: 59] - root - INFO
+2025-07-02 00:31:16 - \U0001f389 Data ingestion completed. - [Line: 77] - root - INFO

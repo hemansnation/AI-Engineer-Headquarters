@@ -1,0 +1,3 @@
+2025-07-02 21:12:57 - \U0001f680 Starting Full ML Pipeline... - [Line: 11] - root - INFO
+2025-07-02 21:12:57 - \U0001f4e5 Running Data Ingestion... - [Line: 17] - root - INFO
+2025-07-02 21:12:57 - \U0001f525 Unexpected Error: 'Configuration' object has no attribute 'get_data_ingestion_config' - [Line: 42] - root - ERROR

@@ -1,0 +1,7 @@
+2025-07-02 19:08:12 - NumExpr defaulting to 12 threads. - [Line: 161] - numexpr.utils - INFO
+2025-07-02 19:08:12 - \U0001f680 Starting data ingestion process... - [Line: 74] - root - INFO
+2025-07-02 19:08:12 - \U0001f50c Connecting to SQLite and reading data from table... - [Line: 26] - root - INFO
+2025-07-02 19:08:12 - \u2705 Data fetched and 'gender' renamed to 'sex' if present. - [Line: 40] - root - INFO
+2025-07-02 19:08:12 - \u2702\ufe0f Splitting data into train and test sets... - [Line: 52] - root - INFO
+2025-07-02 19:08:12 - \U0001f4c1 Train and test files saved. - [Line: 64] - root - INFO
+2025-07-02 19:08:12 - \U0001f389 Data ingestion completed. - [Line: 82] - root - INFO

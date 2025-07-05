@@ -1,0 +1,28 @@
+data_ingestion_config:
+  dataset_download_url: https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz
+  tgz_download_dir: Artifacts/data_ingestion/tgz_data
+  raw_data_dir: Artifacts/data_ingestion/raw_data
+  ingested_train_dir: Artifacts/data_ingestion/ingested/train
+  ingested_test_dir: Artifacts/data_ingestion/ingested/test
+
+data_validation_config:
+  schema_file_path: config/schema.yaml
+  report_file_path: Artifacts/data_validation/report.json
+  report_page_file_path: Artifacts/data_validation/report.html
+
+data_transformation_config:
+  add_bedroom_per_room: true
+  transformed_train_dir: Artifacts/data_transformation/train
+  transformed_test_dir: Artifacts/data_transformation/test
+  preprocessed_object_file_path: Artifacts/data_transformation/preprocessor/preprocessor.pkl
+
+model_trainer_config:
+  trained_model_file_path: Artifacts/model_trainer/
+  base_accuracy: 0.6
+  model_config_file_path: config/model.yaml
+
+model_evaluation_config:
+  model_evaluation_file_path: Artifacts/model_evaluation/model_evaluation.yaml
+
+model_pusher_config:
+  export_dir_path: saved_models
