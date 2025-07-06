@@ -1,0 +1,13 @@
+2025-07-02 01:00:55 - Entered the read_yaml_file method of MainUtils class - [Line: 24] - root - INFO
+2025-07-02 01:00:55 - Reading YAML file from claim/params/params.yaml - [Line: 27] - root - INFO
+2025-07-02 01:00:55 - \U0001f680 Starting data ingestion process... - [Line: 74] - root - INFO
+2025-07-02 01:00:55 - \U0001f50c Connecting to SQLite and reading data from table... - [Line: 26] - root - INFO
+2025-07-02 01:00:55 - \u2705 Data fetched and 'gender' renamed to 'sex' if present. - [Line: 40] - root - INFO
+2025-07-02 01:00:55 - \u2702\ufe0f Splitting data into train and test sets... - [Line: 52] - root - INFO
+2025-07-02 01:00:55 - \U0001f4c1 Train and test files saved. - [Line: 64] - root - INFO
+2025-07-02 01:00:55 - \U0001f389 Data ingestion completed. - [Line: 82] - root - INFO
+2025-07-02 01:00:55 - \U0001f50d Reading training and test datasets... - [Line: 39] - root - INFO
+2025-07-02 01:00:55 - Expected columns: ['age', 'sex', 'bmi', 'children', 'smoker', 'region', 'charges'] - [Line: 31] - root - INFO
+2025-07-02 01:00:55 - Actual columns: ['age', 'sex', 'bmi', 'children', 'smoker', 'region', 'charges'] - [Line: 32] - root - INFO
+2025-07-02 01:00:55 - Expected columns: ['age', 'sex', 'bmi', 'children', 'smoker', 'region', 'charges'] - [Line: 31] - root - INFO
+2025-07-02 01:00:55 - Actual columns: ['age', 'sex', 'bmi', 'children', 'smoker', 'region', 'charges'] - [Line: 32] - root - INFO

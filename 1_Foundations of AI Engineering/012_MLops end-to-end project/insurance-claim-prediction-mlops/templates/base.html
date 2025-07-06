@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insurance Claim Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            width: 600px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-weight: bold;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insurance Claim Prediction Form</h1>
+    <form method="POST" action="/submit">
+        {% for field in fields %}
+            <label for="{{ field.name }}">{{ field.name.replace('_', ' ').title() }}</label>
+
+            {% if field.type == "select" %}
+                <select name="{{ field.name }}" required>
+                    {% for option in field.options %}
+                        <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                </select>
+            {% elif field.type == "float" %}
+                <input type="number" step="any" name="{{ field.name }}" required>
+            {% elif field.type == "date" %}
+                <input type="date" name="{{ field.name }}" required>
+            {% else %}
+                <input type="text" name="{{ field.name }}" required>
+            {% endif %}
+        {% endfor %}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
