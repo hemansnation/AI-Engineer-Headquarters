@@ -1,0 +1,9 @@
+ingestion:
+  input_path: "data/raw/customer_support_articles.csv"
+  output_path: "data/processed"
+retrieval:
+  index_path: "data/processed/faiss_index.bin"
+  chunks_path: "data/processed/chunks.pkl"
+  metadata_path: "data/processed/metadata.pkl"
+generation:
+  model: "facebook/opt-125m"

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support RAG</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Support Assistant</h1>
+        <div class="query-box">
+            <input type="text" id="query" placeholder="Ask a question (e.g., How to reset my password?)">
+            <button onclick="submitQuery()">Submit</button>
+        </div>
+        <div id="response" class="response-box"></div>
+    </div>
+    <script>
+        async function submitQuery() {
+            const query = document.getElementById('query').value;
+            const responseDiv = document.getElementById('response');
+            responseDiv.innerHTML = 'Loading...';
+            try {
+                const response = await fetch('/query', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query })
+                });
+                const data = await response.json();
+                responseDiv.innerHTML = `
+                    <h3>Answer:</h3>
+                    <p>${data.answer}</p>
+                    <h3>Retrieved Contexts:</h3>
+                    <ul>${data.contexts.map(ctx => `<li>${ctx}</li>`).join('')}</ul>
+                `;
+            } catch (error) {
+                responseDiv.innerHTML = 'Error: Could not fetch response.';
+            }
+        }
+    </script>
+</body>
+</html>
