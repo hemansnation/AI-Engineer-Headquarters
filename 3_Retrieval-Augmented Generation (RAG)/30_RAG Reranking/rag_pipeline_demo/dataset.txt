@@ -1,0 +1,11 @@
+Tesla Q4 2023 Report:
+Tesla reported revenues of $25.17 billion in Q4 2023, a 3% increase year-over-year. The company delivered 484,507 vehicles, beating expectations. Production challenges included factory upgrades, but demand remained strong.
+
+Tesla Autonomous Driving:
+Tesla's Full Self-Driving (FSD) technology faced scrutiny in 2023 due to regulatory challenges and safety concerns. The system relies on vision-based AI, but critics argue it lacks robustness in complex urban environments.
+
+Apple Self-Driving Car Project:
+Apple's Project Titan, aimed at developing autonomous vehicles, encountered delays in 2023. The company shifted focus to a Level 2+ system, facing challenges in sensor integration and software reliability.
+
+Apple Financials:
+Apple reported $119.6 billion in revenue for Q1 2024, but its self-driving car project remains a small part of its R&D budget, with no clear launch timeline.
