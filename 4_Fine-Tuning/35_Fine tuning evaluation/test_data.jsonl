@@ -1,0 +1,5 @@
+{"instruction": "Classify the sentiment of this review:This movie is great!", "response":"Positive", "text":"<s>[INST] Classify the sentiment of this review:This movie is great! [/INST] This movie is great!"}
+{"instruction": "Classify the sentiment of this review:This movie is terrible!", "response":"Negative", "text":"<s>[INST] Classify the sentiment of this review:This movie is terrible! [/INST] This movie is terrible!"}
+{"instruction": "Classify the sentiment of this review:It was okay, not the best.", "response":"Neutral", "text":"<s>[INST] Classify the sentiment of this review:It was okay, not the best. [/INST] It was okay, not the best."}
+{"instruction": "Classify the sentiment of this review:I absolutely loved it!", "response":"Positive", "text":"<s>[INST] Classify the sentiment of this review:I absolutely loved it! [/INST] I absolutely loved it!"}
+{"instruction": "Classify the sentiment of this review:I did not enjoy it at all.", "response":"Negative", "text":"<s>[INST] Classify the sentiment of this review:I did not enjoy it at all. [/INST] I did not enjoy it at all."}
