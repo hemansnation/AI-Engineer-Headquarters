@@ -1,0 +1,10 @@
+low low low low low lower lower newest newest newest newest newest newest widest widest widest
+tokens are small pieces of text and the model sees token ids and never letters
+the tokenizer splits text into tokens and the tokenizer maps every token to an id
+tokens cost money so count tokens before you call the model
+every token has an id and every id maps back to a token
+the model reads token ids and the model writes token ids
+a good tokenizer keeps common words as one token and splits rare words into pieces
+the model cannot count letters because the model sees tokens and not letters
+more tokens means more cost and more tokens means more time
+count the tokens first and then call the model
