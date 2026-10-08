@@ -1,0 +1,5 @@
+sentence-transformers>=3.0
+numpy>=1.26
+ollama>=0.4
+pypdf>=4.0
+pytest>=8.0
