@@ -1,0 +1,16 @@
+GOLDEN = [
+    {'qid': 'd1', 'kind': 'drift', 'question': 'How many API requests per minute does the Pro plan allow?', 'gold_doc': 'rate-limits-pro', 'spans': ['allows 600 API requests per minute'], 'key': '600'},
+    {'qid': 'd2', 'kind': 'drift', 'question': 'What is the request limit per minute for the Free plan?', 'gold_doc': 'rate-limits-free', 'spans': ['allows 60 API requests per minute'], 'key': '60'},
+    {'qid': 'd3', 'kind': 'drift', 'question': 'How many requests per minute can an Enterprise plan send?', 'gold_doc': 'rate-limits-enterprise', 'spans': ['allows 6000 API requests per minute'], 'key': '6000'},
+    {'qid': 'd4', 'kind': 'drift', 'question': 'What is the refund window?', 'gold_doc': 'refund-policy-v2', 'spans': ['within 30 days of purchase'], 'key': '30'},
+    {'qid': 'b1', 'kind': 'boundary', 'question': 'How long do backups of deleted data last and who can restore them?', 'gold_doc': 'data-retention', 'spans': ['90 more days', 'Only Enterprise accounts'], 'key': '90'},
+    {'qid': 'b2', 'kind': 'boundary', 'question': 'Can annual plans get a refund and how do I ask for one?', 'gold_doc': 'refund-policy-v2', 'spans': ['Annual plans can be refunded within 14 days', 'open a ticket from the Billing page'], 'key': '14'},
+    {'qid': 'b3', 'kind': 'boundary', 'question': 'What uptime does Nimbus promise and what credit do I get if it is missed?', 'gold_doc': 'uptime-sla', 'spans': ['99.9 percent monthly uptime', 'credit of 10 percent'], 'key': '99.9'},
+    {'qid': 'e1', 'kind': 'easy', 'question': 'How do I rotate an API key?', 'gold_doc': 'api-keys', 'spans': ['create a new key first'], 'key': 'new key'},
+    {'qid': 'e2', 'kind': 'easy', 'question': 'What does error E401 mean?', 'gold_doc': 'error-codes', 'spans': ['E401 means the API key is missing or wrong'], 'key': 'missing or wrong'},
+    {'qid': 'e3', 'kind': 'easy', 'question': 'How do I export my data?', 'gold_doc': 'data-export', 'spans': ['choose Export to download your projects'], 'key': 'Export'},
+    {'qid': 'm1', 'kind': 'missing', 'question': 'What is the per seat price of the Enterprise plan?', 'gold_doc': None, 'spans': [], 'key': ''},
+    {'qid': 'm2', 'kind': 'missing', 'question': 'Does Nimbus run on premises?', 'gold_doc': None, 'spans': [], 'key': ''},
+    {'qid': 'm3', 'kind': 'missing', 'question': 'Who is the CEO of Nimbus?', 'gold_doc': None, 'spans': [], 'key': ''},
+    {'qid': 'm4', 'kind': 'missing', 'question': 'How do I connect Nimbus to Okta single sign on?', 'gold_doc': None, 'spans': [], 'key': ''},
+]

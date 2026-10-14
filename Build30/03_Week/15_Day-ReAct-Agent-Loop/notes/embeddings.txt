@@ -1,0 +1,2 @@
+An embedding turns text into a fixed list of numbers. The all-MiniLM-L6-v2 model gives 384 numbers.
+Cosine similarity close to 1.0 means two texts point in the same direction.

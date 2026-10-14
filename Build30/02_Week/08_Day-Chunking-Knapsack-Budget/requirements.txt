@@ -1,0 +1,4 @@
+sentence-transformers>=3.0
+numpy>=1.26
+pysbd>=0.3.4
+pytest>=8.0

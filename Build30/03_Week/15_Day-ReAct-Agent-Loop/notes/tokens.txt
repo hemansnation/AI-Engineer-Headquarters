@@ -1,0 +1,3 @@
+Tokens are pieces of text, not letters. A model sees token ids and never single characters.
+Hindi text uses more tokens than English, so it costs more.
+BPE builds a vocabulary by merging the most frequent pairs of bytes.

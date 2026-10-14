@@ -1,0 +1,3 @@
+A ReAct agent repeats Thought, Action and Observation until it can write a Final Answer.
+Always set a max iteration cap. An agent with no cap is a bill with no cap.
+Every turn resends the whole history, so prompt tokens grow with each step.

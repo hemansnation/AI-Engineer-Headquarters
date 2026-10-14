@@ -1,0 +1,6 @@
+sentence-transformers
+bm25s
+numpy
+ollama
+python-dotenv
+pytest
