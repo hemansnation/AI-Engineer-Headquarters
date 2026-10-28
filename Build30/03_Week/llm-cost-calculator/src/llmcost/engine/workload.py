@@ -1,0 +1,1 @@
+"""Daily/monthly workload projection."""

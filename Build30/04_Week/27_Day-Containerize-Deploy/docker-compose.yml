@@ -1,0 +1,18 @@
+services:
+  api:
+    build: .
+    image: build30-day27
+    ports:
+      - '8000:8000'
+    env_file:
+      - .env
+    restart: unless-stopped
+  ollama:
+    image: ollama/ollama
+    profiles: [llm]
+    ports:
+      - '11434:11434'
+    volumes:
+      - ollama_data:/root/.ollama
+volumes:
+  ollama_data:

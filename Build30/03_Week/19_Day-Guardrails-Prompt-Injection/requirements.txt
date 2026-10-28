@@ -1,0 +1,5 @@
+ollama
+python-dotenv
+sentence-transformers
+numpy
+pytest

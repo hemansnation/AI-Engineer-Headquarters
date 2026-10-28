@@ -1,0 +1,7 @@
+.env
+virtualenv/
+__pycache__/
+.pytest_cache/
+.sandbox_work/
+decoy_secret.txt
+*.json

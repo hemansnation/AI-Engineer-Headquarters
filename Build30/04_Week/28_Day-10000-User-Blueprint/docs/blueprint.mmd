@@ -1,0 +1,15 @@
+flowchart TD
+  U[10000 users] --> G[API gateway with token bucket limiter]
+  G --> R[Read path ask]
+  G --> W[Write path upload]
+  R --> C[Semantic cache per tenant]
+  C -->|miss| RT[Consistent hash router by tenant]
+  RT --> V[Retrieval from vector store]
+  V --> M[Model servers vLLM with PagedAttention]
+  M --> C
+  W --> S[Postgres documents and versions]
+  W -->|bump version and purge| C
+  S --> Q[Indexing queue]
+  Q --> E[Embedding workers]
+  E --> V
+  G --> O[Prometheus and Grafana]

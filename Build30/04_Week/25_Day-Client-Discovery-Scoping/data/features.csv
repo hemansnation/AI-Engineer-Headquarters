@@ -1,0 +1,10 @@
+name,value,low,likely,high,required
+Mask personal data before the model sees it,8,6,8,14,yes
+Order status lookup from the read-only database,10,18,24,40,no
+Warranty answers from the policy PDF,8,14,20,32,no
+Draft replies for agents to approve,9,16,22,36,no
+Ticket tagging and routing,6,10,14,24,no
+Website chat widget,5,20,30,50,no
+Weekly quality report,4,12,16,28,no
+Hindi language support,3,16,24,44,no
+Automatic refund approval,2,30,45,80,no

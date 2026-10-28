@@ -1,0 +1,3 @@
+rich
+pytest
+huggingface_hub

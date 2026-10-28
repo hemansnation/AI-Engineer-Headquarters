@@ -1,0 +1,6 @@
+numpy
+sentence-transformers
+rank-bm25
+python-dotenv
+ollama
+pytest

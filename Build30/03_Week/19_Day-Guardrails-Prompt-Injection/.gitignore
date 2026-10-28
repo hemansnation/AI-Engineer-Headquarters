@@ -1,0 +1,5 @@
+.env
+virtualenv/
+__pycache__/
+.pytest_cache/
+guard_log.jsonl

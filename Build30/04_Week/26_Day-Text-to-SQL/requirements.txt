@@ -1,0 +1,6 @@
+ollama
+pydantic
+python-dotenv
+sqlglot
+sentence-transformers
+pytest

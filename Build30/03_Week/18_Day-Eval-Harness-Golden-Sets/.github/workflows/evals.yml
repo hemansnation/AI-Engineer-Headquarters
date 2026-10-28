@@ -1,0 +1,13 @@
+name: evals
+on: [pull_request]
+jobs:
+  eval-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install pytest numpy python-dotenv ollama
+      - run: PYTHONPATH=. pytest -q tests
+      - run: PYTHONPATH=. python main.py gate v1 v2

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>Day 24 streaming</title>
+<style>
+body { font-family: system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; }
+textarea { width: 100%; height: 80px; }
+button { margin: 8px 8px 8px 0; padding: 8px 16px; }
+#answer { white-space: pre-wrap; border: 1px solid #ccc; padding: 12px; min-height: 120px; }
+#stats { color: #555; margin-top: 8px; }
+</style>
+</head>
+<body>
+<h1>Day 24 streaming</h1>
+<textarea id='prompt'>Explain Server-Sent Events in one paragraph.</textarea>
+<button id='ask'>Ask</button>
+<button id='stop'>Stop</button>
+<div id='answer'></div>
+<div id='stats'></div>
+<script>
+const answer = document.getElementById('answer');
+const stats = document.getElementById('stats');
+let controller = null;
+function parseFrame(frame) {
+  let event = 'message';
+  const data = [];
+  for (const line of frame.split('\n')) {
+    if (line.startsWith(':')) continue;
+    const cut = line.indexOf(':');
+    if (cut === -1) continue;
+    const field = line.slice(0, cut);
+    let value = line.slice(cut + 1);
+    if (value.startsWith(' ')) value = value.slice(1);
+    if (field === 'event') event = value;
+    if (field === 'data') data.push(value);
+  }
+  return { event, data: data.join('\n') };
+}
+async function ask() {
+  controller = new AbortController();
+  answer.textContent = '';
+  stats.textContent = 'waiting...';
+  const started = performance.now();
+  let first = null;
+  let tokens = 0;
+  try {
+    const response = await fetch('/stream', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prompt: document.getElementById('prompt').value }),
+      signal: controller.signal,
+    });
+    const reader = response.body.pipeThrough(new TextDecoderStream()).getReader();
+    let buffer = '';
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buffer += value;
+      let cut;
+      while ((cut = buffer.indexOf('\n\n')) !== -1) {
+        const message = parseFrame(buffer.slice(0, cut));
+        buffer = buffer.slice(cut + 2);
+        if (message.event === 'token') {
+          if (first === null) first = performance.now() - started;
+          tokens += 1;
+          answer.textContent += message.data;
+        }
+        if (message.event === 'error') answer.textContent += '\n[' + message.data + ']';
+      }
+    }
+    stats.textContent = 'first token after ' + Math.round(first) + ' ms, ' + tokens + ' tokens, total ' + Math.round(performance.now() - started) + ' ms';
+  } catch (error) {
+    stats.textContent = 'stopped: ' + error.name;
+  }
+}
+document.getElementById('ask').onclick = ask;
+document.getElementById('stop').onclick = () => controller && controller.abort();
+</script>
+</body>
+</html>

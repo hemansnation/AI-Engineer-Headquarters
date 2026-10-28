@@ -1,0 +1,15 @@
+FastAPI is a Python web framework that builds APIs from type hints and Pydantic models.
+Uvicorn is the ASGI server that runs a FastAPI app and handles many connections on one event loop.
+An async def endpoint runs on the event loop, so a blocking call like time.sleep inside it freezes every other request.
+A plain def endpoint runs in a thread pool, so blocking code inside it does not freeze the event loop.
+Pydantic validates the request body before your function runs and returns a 422 response when the data is wrong.
+BackgroundTasks run after the response is sent, which makes them a good place for logging and small cleanup jobs.
+A health endpoint tells a platform the process is alive, and a readiness endpoint tells it the service can take traffic.
+A semaphore limits how many requests call the model at the same time, so a traffic spike does not crush the model server.
+HTTP status 429 means the caller sent too many requests, and the Retry-After header tells them when to try again.
+HTTP status 503 means the service is busy or a dependency is down, and callers should retry later.
+Locust is an open-source load testing tool where you describe user behavior in plain Python.
+p95 latency is the response time that 95 percent of requests beat, and it tells you more than the average.
+Ollama runs open-weight language models on your own machine and exposes a local HTTP API on port 11434.
+Sentence Transformers turns text into dense vectors, and all-MiniLM-L6-v2 gives 384 numbers per sentence.
+Each uvicorn worker is a separate process, so every worker loads its own copy of the embedding model.

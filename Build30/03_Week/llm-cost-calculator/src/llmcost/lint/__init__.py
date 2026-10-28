@@ -1,0 +1,1 @@
+"""Prompt cost linter package."""

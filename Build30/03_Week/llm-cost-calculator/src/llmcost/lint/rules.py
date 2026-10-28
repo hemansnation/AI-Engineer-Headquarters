@@ -1,0 +1,1 @@
+"""Prompt cost lint rules."""

@@ -1,0 +1,1 @@
+"""Vectorized simulator returning percentiles."""

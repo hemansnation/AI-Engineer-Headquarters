@@ -1,0 +1,12 @@
+{"id": "ret-window", "question": "How many days do I have to return an item?", "expected": "30 days", "scorer": "contains", "tags": ["returns"], "source": "ticket-sample-01", "must_pass": false}
+{"id": "refund-time", "question": "How long does a refund take?", "expected": "5|7|business days", "scorer": "contains", "tags": ["refunds"], "source": "ticket-sample-02", "must_pass": false}
+{"id": "ship-free", "question": "What is the minimum order for free shipping?", "expected": "500", "scorer": "contains", "tags": ["shipping"], "source": "ticket-sample-03", "must_pass": false}
+{"id": "ship-fee", "question": "What is the shipping fee for a small order?", "expected": "Shipping costs 49 rupees.", "scorer": "edit", "tags": ["shipping"], "source": "ticket-sample-04", "must_pass": false}
+{"id": "support-hours", "question": "When is support available?", "expected": "saturday|9", "scorer": "contains", "tags": ["support"], "source": "ticket-sample-05", "must_pass": false}
+{"id": "ship-abroad", "question": "Can you ship to the USA?", "expected": "No. We only ship within India.", "scorer": "judge", "tags": ["shipping"], "source": "ticket-sample-06", "must_pass": false}
+{"id": "gift-card", "question": "Can I get a refund on a gift card?", "expected": "No. Gift cards cannot be refunded.", "scorer": "judge", "tags": ["refunds"], "source": "ticket-sample-07", "must_pass": true}
+{"id": "price-match", "question": "Do you price match Amazon?", "expected": "I do not know.", "scorer": "judge", "tags": ["out_of_policy"], "source": "ticket-sample-08", "must_pass": true}
+{"id": "bitcoin", "question": "Can I pay in bitcoin?", "expected": "I do not know.", "scorer": "judge", "tags": ["out_of_policy"], "source": "ticket-sample-09", "must_pass": true}
+{"id": "refund-where", "question": "Where does my refund go?", "expected": "Your refund goes back to the original payment method.", "scorer": "embed", "tags": ["refunds"], "source": "ticket-sample-10", "must_pass": false}
+{"id": "used-item", "question": "Can I return a used item?", "expected": "No. Returns are only accepted for unused items.", "scorer": "judge", "tags": ["returns"], "source": "ticket-sample-11", "must_pass": false}
+{"id": "days-only", "question": "What is the return window? Answer with only the number of days.", "expected": "30 days", "scorer": "exact", "tags": ["returns", "format"], "source": "ticket-sample-12", "must_pass": false}

@@ -1,0 +1,14 @@
+A Docker image is a read-only package that holds your code, your libraries and the settings needed to run it.
+A container is a running copy of an image, and you can start many containers from one image.
+Docker caches each layer of a Dockerfile, so you should copy requirements first and your code last.
+A server inside a container must listen on 0.0.0.0, because 127.0.0.1 inside a container cannot be reached from outside.
+Secrets such as API keys belong in environment variables set at runtime, and never inside the image or the Git repository.
+A multi-stage build installs packages in one stage and copies only the result into a small final image.
+A health check endpoint tells the platform whether your process is alive, and a readiness check tells it whether the process can take traffic.
+Write logs to stdout as one JSON object per line, so the platform can collect and search them.
+Embedding models turn a sentence into a list of numbers, and similar meanings give vectors that point in a similar direction.
+The all-MiniLM-L6-v2 embedding model produces vectors with 384 numbers for every sentence.
+A cold start is the delay when a sleeping service wakes up and loads its model before it can answer.
+A dockerignore file keeps virtual environments, env files and git history out of the build context, which makes builds faster and safer.
+Running the container as a non-root user limits the damage if someone breaks into the service.
+Rate limits and timeouts protect your service and your wallet when many strangers call it.

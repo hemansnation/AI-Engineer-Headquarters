@@ -1,0 +1,9 @@
+Marlowe Observatory | Marlowe Observatory is a research station on Kestrel Ridge. It was founded in 1931 by Ines Varga. Its main instrument is the Halden Telescope. The station is run by the Kestrel Institute.
+Ines Varga | Ines Varga was an astronomer born in Valmora. She founded Marlowe Observatory in 1931. Later she taught at the University of Brenn.
+Halden Telescope | The Halden Telescope is a 40 inch reflector telescope. It was built in 1938 by the optician Tomas Halden. It stands inside Marlowe Observatory.
+Tomas Halden | Tomas Halden was an optician born in Brenn. He ground the mirror of the Halden Telescope. He died in 1962.
+Brenn | Brenn is a river city with a population of 210000. It is the home of the University of Brenn. It sits on the Sael river.
+University of Brenn | The University of Brenn was founded in 1702. It is the oldest university in the region. Its observatory course was started by Ines Varga.
+Valmora | Valmora is a coastal town known for salt production. It has a population of 8000. Ines Varga was born there.
+Kestrel Ridge | Kestrel Ridge is a mountain range with a highest point of 2300 meters. Marlowe Observatory stands near its northern end.
+Kestrel Institute | The Kestrel Institute is a research body founded in 1950. Its headquarters are in Brenn. It runs Marlowe Observatory.

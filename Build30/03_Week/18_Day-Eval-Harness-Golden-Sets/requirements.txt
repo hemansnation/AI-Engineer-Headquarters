@@ -1,0 +1,5 @@
+ollama>=0.6
+sentence-transformers>=5.0
+numpy>=2.0
+python-dotenv>=1.0
+pytest>=8.0

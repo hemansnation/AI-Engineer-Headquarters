@@ -1,0 +1,29 @@
+Me: Thanks for making time Rahul. Tell me what you want to build.
+Rahul: We need an AI chatbot on our website. Our competitor has one and the CEO wants the same.
+Me: Understood. Before I think about a chatbot, tell me what is going wrong today that made the CEO ask for it.
+Rahul: Customers are angry. They write to support and wait too long for any reply.
+Me: How long is too long, in numbers?
+Rahul: The first reply takes 3 days on average. We track it in a sheet that the team leads fill every Friday.
+Me: How many tickets come in?
+Rahul: About 4200 a month. We have 12 agents.
+Me: What are people writing about?
+Rahul: Mostly two things. Where is my order, and what is the status of my warranty claim. I would say 62 percent of tickets are one of those two.
+Me: Walk me through what an agent does with one of those tickets.
+Rahul: They open the ticket, copy the order number, search it in our order system, read the status, then type a reply. Warranty ones need them to read our policy PDF first. It takes about 9 minutes each.
+Me: What does an agent cost you per hour?
+Rahul: About 6 dollars an hour all in.
+Me: Where does the order data live?
+Rahul: In a MySQL database. Our IT team can give you a read-only login, but it will take about a week to set up.
+Me: And the warranty rules?
+Rahul: A 14 page PDF. Nobody has updated it in a year, so some rules in it are wrong.
+Me: Is there anything about the data I should be careful with?
+Rahul: Yes. Tickets have home addresses and phone numbers. Nothing can leave our servers.
+Me: If this works, what number changes?
+Rahul: First reply under 1 hour for order status questions. That is what I would sign off on.
+Me: Who owns this on your side?
+Rahul: I do. I run support operations and I can say yes or no.
+Me: Do you have a budget in mind?
+Rahul: Around 5000 dollars for the first phase, not more.
+Me: Last question. Should agents check the answers before customers see them?
+Rahul: For now yes. We do not trust it yet, and refunds must never be automatic.
+Me: Thank you. I will write this up and send you a scope.

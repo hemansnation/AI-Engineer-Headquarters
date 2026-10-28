@@ -1,0 +1,6 @@
+venv/
+.env
+__pycache__/
+.pytest_cache/
+token_log.jsonl
+demo_repo/

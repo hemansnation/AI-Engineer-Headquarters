@@ -1,0 +1,7 @@
+.env
+venv/
+__pycache__/
+.pytest_cache/
+token_log.jsonl
+data/index/
+out/

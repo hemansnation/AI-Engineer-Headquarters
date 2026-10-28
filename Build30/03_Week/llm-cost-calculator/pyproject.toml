@@ -1,0 +1,64 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "llmcost"
+dynamic = ["version"]
+description = "LLM cost modeling: reasoning tokens, caching, agent Monte Carlo, unit economics."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "pydantic>=2",
+  "numpy",
+  "pyyaml",
+  "tiktoken",
+  "tokenizers",
+  "fastapi",
+  "uvicorn[standard]",
+  "streamlit",
+  "plotly",
+  "typer",
+  "rich",
+  "sqlmodel",
+  "polars",
+  "httpx",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pytest-cov",
+  "hypothesis",
+  "ruff",
+  "mypy",
+  "pre-commit",
+  "types-PyYAML",
+]
+
+[project.scripts]
+llmcost = "llmcost.cli.main:app"
+
+[tool.hatch.version]
+path = "src/llmcost/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/llmcost"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.12"
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = ["llmcost.engine.*", "llmcost.sim.*"]
+strict = true
